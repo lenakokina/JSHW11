@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <table class="table">
+        <thead><h1 class="title">Contact list</h1>
+            <tr class="input">
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody id="contactsList">      
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><input id="nameInput" type="text" placeholder="Enter your name"></td>
+                <td><input id="surnameInput" type="text" placeholder="Enter your surname"></td>
+                <td><input id="phoneInput" type="text" placeholder="Enter your phone"></td>
+                <td><button id="addContactButton">Add</button></td> 
+            </tr>
+        </tfoot>
+    </table>
+    <script id="newContactTemplate" type="text/template">
+        <tr class="contact-item">
+            <td class="data">{{Name}}</td>
+            <td class="data">{{Surname}}</td>
+            <td class="data">{{Phone}}</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+    </script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="container">
+    <ol id="list">
+    </ol>
+</div> 
+<input id="inputEnter" type="text" placeholder="Введите задачу">
+<button id="myBtn">Add</button>
+</body>
+</html> -->
+
+
+
